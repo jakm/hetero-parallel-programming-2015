@@ -1,4 +1,5 @@
-// MP 1
+// Excercise 1 - Vector Addition
+
 #include <wb.h>
 
 #define wbCheck(stmt) do {                                                \

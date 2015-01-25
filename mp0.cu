@@ -1,7 +1,9 @@
+// Excercise 0 - Device Query
+
 #include	<wb.h>
 
-//@@ The purpose of this code is to become familiar with the submission 
-//@@ process. Do not worry if you do not understand all the details of 
+//@@ The purpose of this code is to become familiar with the submission
+//@@ process. Do not worry if you do not understand all the details of
 //@@ the code.
 
 int main(int argc, char ** argv) {
