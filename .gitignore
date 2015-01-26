@@ -1,3 +1,4 @@
 libwb
 mp*
 !mp*.cu
+!mp*-data
