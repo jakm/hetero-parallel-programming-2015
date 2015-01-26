@@ -3,7 +3,7 @@
 PROG=$1
 TYPE=$2
 
-if [ -z $PROG ] || [ $PROG = "-h" ]
+if [ -z $PROG ] || [ $PROG = "-h" ] || [ -z $TYPE ]
 then
     echo "Usage: $(basename $0) <executable> <type>" 1>&2
     echo
