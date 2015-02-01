@@ -30,7 +30,10 @@ fi
 
 for i in $(ls ${DATASET_DIR} | sort -h)
 do
-    if $(${DIR}/run-mp.sh ${PROG} -e ${DATASET_DIR}/${i}/output.raw -i ${DATASET_DIR}/${i}/input0.raw,${DATASET_DIR}/${i}/input1.raw -o /tmp/output.raw -t ${TYPE} | grep -q 'Solution is correct.')
+    if $(${DIR}/run-mp.sh ${PROG} -e $(find ${DATASET_DIR}/${i} | grep output | head -n1) \
+                                  -i $(find ${DATASET_DIR}/${i} | grep input | sort -h | paste -d, -s) \
+                                  -o /tmp/output.raw -t ${TYPE} \
+        | grep -q 'Solution is correct.')
     then
         echo "$(basename ${DATASET_DIR})/${i}: OK"
     else
