@@ -2,3 +2,4 @@ libwb
 mp*
 !mp*.cu
 !mp*-data
+!mp*.zip
