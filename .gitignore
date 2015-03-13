@@ -1,5 +1,7 @@
 libwb
 mp*
 !mp*.cu
+!mp*.cl
+!mp*.cpp
 !mp*-data
 !mp*.zip
