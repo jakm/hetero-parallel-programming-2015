@@ -1,4 +1,4 @@
-all: mp0 mp1 mp2-1 mp2-2 mp3 mp4 mp5 mp6
+all: mp0 mp1 mp2-1 mp2-2 mp3 mp4 mp5 mp6 mp7
 
 %: %.cu
 	nvcc -arch=sm_30 -o $@ -Ilibwb -L. -lwb $<
