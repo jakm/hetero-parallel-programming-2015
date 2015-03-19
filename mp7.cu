@@ -1,5 +1,12 @@
 // Excercise 7 - Vector Addition with Streams
 
+/******************************************************************************
+ *                                                                            *
+ * TODO: streamy funguji pouze s pinned pameti (cudaMallocHost); nejak overit,*
+ * zda bude segmentovani fungovat tak, jak je ted                             *
+ *                                                                            *
+ ******************************************************************************/
+
 #include <wb.h>
 
 #define wbCheck(stmt) do {                                                \
